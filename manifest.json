@@ -1,0 +1,23 @@
+{
+  "name": "ShellShock Hero",
+  "homepage_url": "https://github.com/skidlamer/",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "A shellshock.io modification",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://shellshock.io/*",
+    "background"
+  ],
+  "web_accessible_resources": [
+    "shellshock.min.js"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "ShellShock Hero"
+  },
+  "background": {
+    "scripts": ["hook.js"]
+  }
+}
